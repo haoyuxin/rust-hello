@@ -1,0 +1,10 @@
+[package]
+name = "rust_hello"
+version = "0.0.1"
+# this version of Cargo is older than the `2022` edition, and only supports `2015`, `2018`, and `2021` editions.
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
